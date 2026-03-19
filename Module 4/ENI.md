@@ -19,7 +19,7 @@ An **Elastic Network Interface (ENI)** is a virtual network card in AWS that can
 
 * Private IP address
 * Security Groups
-* MAC address
+* MAC address  - A MAC (Media Access Control) address is a unique 12-character hexadecimal identifier (e.g., 1A:2B:3C:4D:5E:6F) permanently assigned to a device's network interface controller (NIC) by the manufacturer. It serves as a physical, hardware-level address used to identify and manage devices on a local network, such as Wi-Fi or Ethernet
 
 ---
 
