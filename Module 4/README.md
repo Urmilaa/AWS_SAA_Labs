@@ -190,3 +190,120 @@ User → Elastic IP → Web Server (EC2)
 
 
 ---
+
+#  AWS Elastic IP – Free Tier Guide
+
+##  Objective
+
+Understand whether Elastic IP is free in AWS Free Tier and when charges apply.
+
+---
+
+#  Is Elastic IP Free in AWS?
+
+Elastic IP is available in AWS Free Tier, but:
+
+>  It is **NOT always free**
+
+---
+
+#  When Elastic IP is FREE
+
+Elastic IP is free **only if all conditions are met:**
+
+* It is **associated with a running EC2 instance**
+* You are using **only ONE Elastic IP**
+
+###  Example:
+
+```
+EC2 (Running) + 1 Elastic IP → FREE 
+```
+
+---
+
+#  When Elastic IP is CHARGEABLE
+
+You will be charged in the following scenarios:
+
+---
+
+##  Case 1: Elastic IP NOT Attached
+
+```
+Elastic IP allocated but NOT attached → Charge 
+```
+
+---
+
+##  Case 2: Instance is STOPPED
+
+```
+Elastic IP attached but EC2 STOPPED → Charge 
+```
+
+---
+
+##  Case 3: Multiple Elastic IPs
+
+```
+More than 1 Elastic IP → Extra IPs charged 
+```
+
+---
+
+#  Why AWS Charges for Elastic IP?
+
+* Public IPv4 addresses are **limited resources**
+* AWS encourages:
+
+  * Efficient usage
+  * Avoiding unused IP allocation
+
+---
+
+#  AWS SAA Exam Tips
+
+* Static Public IP needed → **Elastic IP**
+* Avoid Elastic IP charges → **Attach to running instance**
+* Cost optimization → **Release unused Elastic IPs**
+
+---
+
+#  Best Practices
+
+After completing your lab:
+
+1. Disassociate Elastic IP
+2. Release Elastic IP
+
+> ✔ Prevents unnecessary charges
+
+---
+
+#  Pro Tip
+
+Instead of Elastic IP in production, consider:
+
+* Elastic Load Balancer (ELB)
+* Amazon Route 53 (DNS)
+
+### Benefits:
+
+* High availability
+* Scalability
+* No manual IP management
+
+---
+
+#  Summary
+
+| Scenario                             | Cost      |
+| ------------------------------------ | --------- |
+| 1 Elastic IP + Running EC2           | Free     |
+| Elastic IP not attached              | Charged  |
+| EC2 stopped with Elastic IP attached | Charged  |
+| Multiple Elastic IPs                 | Charged  |
+
+---
+
