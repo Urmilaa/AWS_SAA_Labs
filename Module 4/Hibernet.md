@@ -53,6 +53,10 @@ In **Advanced Details**:
 
 * Enable:  **Allow Hibernate**
 
+In ** Storage Volumes -> EBS Volume (Advance details) **:
+
+make option 'Encrypted'.
+
 ---
 
 ##  Storage Requirement Example
