@@ -1,7 +1,4 @@
 #  AWS ENI (Elastic Network Interface) Hands-On Labs
-
-###  Designed for AWS Solutions Architect Associate (SAA) Exam
-
 ---
 
 ##  Overview
@@ -9,24 +6,6 @@
 This repository contains **hands-on lab exercises** to understand **Elastic Network Interfaces (ENI)** in AWS. These labs are designed to help you gain practical experience and strengthen concepts frequently tested in the **SAA exam**.
 
 ---
-
-##  Learning Objectives
-
-* Understand what an ENI is and how it works
-* Attach and detach ENIs between EC2 instances
-* Configure multiple private IP addresses
-* Associate Elastic IPs with ENIs
-* Learn ENI-based failover concepts
-* Explore security groups and networking behavior
-* Understand ENI limitations and constraints
-
----
-
-##  Prerequisites
-
-* AWS Account (Free Tier recommended)
-* Basic knowledge of EC2 and VPC
-* SSH client (Terminal / PuTTY)
 
 ---
 
