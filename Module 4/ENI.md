@@ -29,8 +29,8 @@ An **Elastic Network Interface (ENI)** is a virtual network card in AWS that can
 2. Click **Launch Instance**
 3. Configure:
 
-   * AMI: Amazon Linux
-   * Instance type: t2.micro
+   * AMI: ubuntu
+   * Instance type: t3.small
    * VPC: Default
 4. Launch instance
 
