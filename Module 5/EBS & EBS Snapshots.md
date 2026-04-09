@@ -1,12 +1,12 @@
-# 🧪 AWS Hands-On Lab: EBS Volume & Snapshot
+#  AWS Hands-On Lab: EBS Volume & Snapshot
 
-## 📌 Overview
+##  Overview
 
 This hands-on lab demonstrates how to create, attach, and manage an EBS volume, along with creating and restoring snapshots. It is designed for practical learning and exam preparation.
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 
 By completing this lab, you will:
 
@@ -19,7 +19,7 @@ By completing this lab, you will:
 
 ---
 
-## 🧱 Prerequisites
+##  Prerequisites
 
 * AWS Account
 * Basic knowledge of EC2 and SSH
@@ -27,7 +27,7 @@ By completing this lab, you will:
 
 ---
 
-## 🚀 Step 1: Launch EC2 Instance
+##  Step 1: Launch EC2 Instance
 
 1. Navigate to EC2 Console
 2. Click **Launch Instance**
@@ -39,11 +39,11 @@ By completing this lab, you will:
    * Key Pair: Select/Create
 4. Launch the instance
 
-> ⚠️ Note: Record the Availability Zone (AZ)
+>  Note: Record the Availability Zone (AZ)
 
 ---
 
-## 💾 Step 2: Create EBS Volume
+##  Step 2: Create EBS Volume
 
 1. Go to **EC2 → Volumes**
 2. Click **Create Volume**
@@ -54,11 +54,11 @@ By completing this lab, you will:
    * AZ: Same as EC2 instance
 4. Click **Create Volume**
 
-> ✅ EBS volumes must be in the same AZ as the EC2 instance
+>  EBS volumes must be in the same AZ as the EC2 instance
 
 ---
 
-## 🔗 Step 3: Attach Volume
+##  Step 3: Attach Volume
 
 1. Select the created volume
 2. Click **Actions → Attach Volume**
@@ -71,7 +71,7 @@ By completing this lab, you will:
 
 ---
 
-## 🔐 Step 4: Connect to EC2
+##  Step 4: Connect to EC2
 
 ```bash
 ssh -i your-key.pem ec2-user@<public-ip>
@@ -79,7 +79,7 @@ ssh -i your-key.pem ec2-user@<public-ip>
 
 ---
 
-## 🔍 Step 5: Verify Volume
+##  Step 5: Verify Volume
 
 ```bash
 lsblk
@@ -87,7 +87,7 @@ lsblk
 
 ---
 
-## 🧰 Step 6: Format Volume
+##  Step 6: Format Volume
 
 ```bash
 sudo mkfs -t ext4 /dev/xvdf
@@ -95,7 +95,7 @@ sudo mkfs -t ext4 /dev/xvdf
 
 ---
 
-## 📂 Step 7: Mount Volume
+##  Step 7: Mount Volume
 
 ```bash
 sudo mkdir /data
@@ -110,7 +110,7 @@ df -h
 
 ---
 
-## ✍️ Step 8: Write Data
+##  Step 8: Write Data
 
 ```bash
 echo "EBS Snapshot Demo" | sudo tee /data/demo.txt
@@ -119,7 +119,7 @@ cat /data/demo.txt
 
 ---
 
-## 📸 Step 9: Create Snapshot
+##  Step 9: Create Snapshot
 
 1. Go to **EC2 → Volumes**
 2. Select volume
@@ -127,11 +127,11 @@ cat /data/demo.txt
 4. Name: `ebs-lab-snapshot`
 5. Click **Create Snapshot**
 
-> 📌 Snapshots are incremental backups
+>  Snapshots are incremental backups
 
 ---
 
-## 🔄 Step 10: Create Volume from Snapshot
+##  Step 10: Create Volume from Snapshot
 
 1. Go to **Snapshots**
 2. Select snapshot
@@ -143,7 +143,7 @@ cat /data/demo.txt
 
 ---
 
-## 🔗 Step 11: Attach New Volume
+##  Step 11: Attach New Volume
 
 * Attach to same EC2 instance
 * Device name:
@@ -154,7 +154,7 @@ cat /data/demo.txt
 
 ---
 
-## 📂 Step 12: Mount New Volume
+##  Step 12: Mount New Volume
 
 ```bash
 lsblk
@@ -164,7 +164,7 @@ sudo mount /dev/xvdg /data2
 
 ---
 
-## ✅ Step 13: Verify Data
+##  Step 13: Verify Data
 
 ```bash
 cat /data2/demo.txt
@@ -178,7 +178,7 @@ EBS Snapshot Demo
 
 ---
 
-## ⚠️ Troubleshooting
+##  Troubleshooting
 
 | Issue              | Solution                  |
 | ------------------ | ------------------------- |
@@ -188,7 +188,7 @@ EBS Snapshot Demo
 
 ---
 
-## 🧠 Key Learnings
+##  Key Learnings
 
 * EBS volumes are AZ-specific
 * Snapshots are region-level
@@ -197,7 +197,7 @@ EBS Snapshot Demo
 
 ---
 
-## 🧹 Cleanup
+##  Cleanup
 
 To avoid charges:
 
@@ -207,7 +207,7 @@ To avoid charges:
 
 ---
 
-## 📚 Use Cases
+##  Use Cases
 
 * Backup and restore
 * Disaster recovery
@@ -215,12 +215,4 @@ To avoid charges:
 
 ---
 
-## ⭐ Contributing
 
-Feel free to fork this repository and enhance the lab with automation scripts (CLI/Terraform).
-
----
-
-## 📄 License
-
-This project is for educational purposes.
