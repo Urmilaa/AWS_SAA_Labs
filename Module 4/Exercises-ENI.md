@@ -241,12 +241,6 @@ Understand scaling limits.
 * Supports multiple private IPs
 * Elastic IP binds to ENI
 
----
-
-
----
-
-
 
 
 ✨ Happy Learning & Best of Luck for your AWS SAA Exam!
