@@ -3,8 +3,7 @@
 
 ##  Overview
 
-This repository contains **hands-on lab exercises** to understand **Elastic Network Interfaces (ENI)** in AWS. These labs are designed to help you gain practical experience and strengthen concepts frequently tested in the **SAA exam**.
-
+This repository contains **hands-on lab exercises** to understand **Elastic Network Interfaces (ENI)** in AWS. 
 ---
 
 ---
