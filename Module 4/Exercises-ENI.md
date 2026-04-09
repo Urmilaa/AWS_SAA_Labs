@@ -228,19 +228,6 @@ Understand scaling limits.
 
 ---
 
-##  Key Exam Concepts
-
-* ENI = Virtual Network Interface Card
-* AZ-bound resource
-* Can move across instances (same AZ)
-* Retains:
-
-  * IP address
-  * Security groups
-  * MAC address
-* Supports multiple private IPs
-* Elastic IP binds to ENI
-
 
 
 ✨ Happy Learning & Best of Luck for your AWS SAA Exam!
