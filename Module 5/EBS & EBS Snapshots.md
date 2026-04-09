@@ -34,8 +34,8 @@ By completing this lab, you will:
 3. Configure:
 
    * Name: `ebs-lab-instance`
-   * AMI: Amazon Linux 2
-   * Instance Type: `t2.micro`
+   * AMI: Ubuntu
+   * Instance Type: `t3.small`
    * Key Pair: Select/Create
 4. Launch the instance
 
