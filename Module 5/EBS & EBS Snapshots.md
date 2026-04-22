@@ -66,7 +66,7 @@ By completing this lab, you will:
 4. Device name:
 
    ```bash
-   /dev/xvdf
+   /dev/sdf
    ```
 
 ---
@@ -90,7 +90,7 @@ lsblk
 ##  Step 6: Format Volume
 
 ```bash
-sudo mkfs -t ext4 /dev/xvdf
+sudo mkfs.ext4 /dev/nvme1n1
 ```
 
 ---
@@ -99,7 +99,7 @@ sudo mkfs -t ext4 /dev/xvdf
 
 ```bash
 sudo mkdir /data
-sudo mount /dev/xvdf /data
+sudo mount /dev/nvme1n1 /data
 ```
 
 Verify:
