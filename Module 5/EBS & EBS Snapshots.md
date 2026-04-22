@@ -149,7 +149,7 @@ cat /data/demo.txt
 * Device name:
 
 ```bash
-/dev/xvdg
+/dev/sdg
 ```
 
 ---
@@ -159,7 +159,7 @@ cat /data/demo.txt
 ```bash
 lsblk
 sudo mkdir /data2
-sudo mount /dev/xvdg /data2
+sudo mount /dev/nvme2n1 /data2
 ```
 
 ---
