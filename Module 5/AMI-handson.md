@@ -204,6 +204,6 @@ AMI creation includes:
 - Root volume snapshot
 - Instance configuration
 
-👉 This is why new instances come pre-installed and ready to use.
+ This is why new instances come pre-installed and ready to use.
 
 ---
