@@ -177,15 +177,6 @@ After completing this lab, you will:
 
 ---
 
-#  Bonus Exercises
-
-Try extending this lab:
-
-- Auto-mount EFS using `/etc/fstab`
-- Use EFS with Auto Scaling
-- Create and access files from multiple instances simultaneously
-
----
 
 #  Pro Tip
 
@@ -194,6 +185,6 @@ EFS is:
 - Highly available
 - Managed by AWS
 
-👉 Perfect for shared and scalable storage needs
+Perfect for shared and scalable storage needs
 
 ---
