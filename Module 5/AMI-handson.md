@@ -27,7 +27,7 @@ An Amazon Machine Image (AMI) is a pre-configured template that contains:
 ```
         +----------------------+
         |   Launch EC2         |
-        | (Amazon Linux 2)     |
+        | (Ubuntu)     |
         +----------+-----------+
                    |
                    v
@@ -92,10 +92,11 @@ ssh -i your-key.pem ec2-user@<public-ip>
 ##  Step 3: Install and Configure NGINX
 
 ```bash
-sudo yum update -y
-sudo yum install nginx -y
-sudo systemctl start nginx
-sudo systemctl enable nginx
+sudo apt update -y
+    2  sudo apt install nginx -y 
+    3  sudo systemctl start nginx
+    4  sudo systemctl enable nginx 
+    5  sudo systemctl status nginx
 ```
 
 ###  Verify
